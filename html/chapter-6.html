@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            <fieldset>
+                Fill Details: <big><strong>Registration</strong></big>
+            </fieldset>
+        </legend>
+        <form action="../Session-2/welcome.html" method="post">
+            <table align="center">
+                <tr>
+                    <td>
+                        <label for="username">Username:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="username" placeholder="Enter Username" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" placeholder="example@gmail.com" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" placeholder="*********" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="contact">Contact:</label>
+                    </td>
+                    <td>
+                        <input type="text" maxlength="10" id="contact" placeholder="Enter 10 Digit Mobile No" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">DOB:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Gender</label>
+                    </td>
+                    <td>
+                        <input checked type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="femail" value="femail">
+                        <label for="femail">Femail</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Hobbies</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="cricket" id="cricket" value="Cricket">
+                        <label for="cricket">Cricket</label>
+                        <input type="checkbox" name="Football" id="football" value="Football">
+                        <label for="football">Football</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="subject">Subject</label>
+                    </td>
+                    <td>
+                        <select id="subject">
+                            <!-- <select multiple id="subject"> -->
+                            <option value="">Select Option</option>
+                            <option value="C">C Language</option>
+                            <option value="C++">C++ Language</option>
+                            <option value="Java">Java Language</option>
+                            <option value="Python">Python Language</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address</label>
+                    </td>
+                    <td>
+                        <textarea id="address" cols="21" rows="3" placeholder="Enter Address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="image">Upload File</label>
+                    </td>
+                    <td>
+                        <input type="file" id="image">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>
