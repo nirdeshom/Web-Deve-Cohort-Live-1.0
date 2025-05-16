@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Video Embed Example</title>
+</head>
+
+<body>
+
+    <h2>Embedded Video Example</h2>
+
+    <!-- Video Element -->
+    <video width="640" height="360" controls autoplay poster="./images/chai-cohort.png" muted>
+
+        <!-- Video Source -->
+        <source src="./video/video.mp4" type="video/mp4">
+        <!-- <source src="video.webm" type="video/webm"> -->
+
+        <!-- Subtitles / Captions -->
+        <track src="./subtitles_en.vtt" kind="subtitles" srclang="en" label="English" default>
+        <!-- <track src="./subtitles_en.vtt" kind="subtitles" srclang="es" label="Spanish"> -->
+    </video>
+
+    <h2>Audio Player with Multiple Formats</h2>
+    <!-- Audio Element with multiple source formats -->
+    <audio controls>
+        <!-- First Source: MP3 -->
+        <source src="./video/audio.mp3" type="audio/mpeg">
+
+        <!-- Second Source: OGG -->
+        <!-- <source src="audio.ogg" type="audio/ogg"> -->
+    </audio>
+
+    <br>
+    <br>
+    <!-- iframe -->
+     <h2>IFrame</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DBbvK5btNrY?si=jyO-tiwA0WtFZW8i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+
+</html>
